@@ -16,7 +16,7 @@ DATA
       list) gh repo list ;;
       login) gh auth login -w ;;
       logout) gh auth logout ;;
-      push) git add -A ; git commit -m "`date -u`" ; git push ;;
+      push) git add -A ; git commit -m "`date -u`" ; git push | git push -u origin master | git push -u origin main ;;
       status) gh auth status ;;
       *) echo $data ; false ;;
     esac
