@@ -30,5 +30,3 @@ DATA
     echo $data ; false
   fi
 }
-
-# 
